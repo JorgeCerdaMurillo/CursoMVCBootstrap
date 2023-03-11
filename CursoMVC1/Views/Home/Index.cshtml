@@ -1,0 +1,155 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<h2>Ejemplo 1: Alineando la fila</h2>
+
+<div class="row align-items-center">
+    <div class="col">
+        columna 1
+    </div>
+    <div class="col">
+        columna 2
+    </div> 
+    <div class="col">
+        columna 3
+    </div>
+</div>
+<div class="row align-items-end">
+    <div class="col">
+        columna 1
+    </div>
+    <div class="col">
+        columna 2
+    </div>
+    <div class="col">
+        columna 3
+    </div>
+</div>
+<div class="row align-items-start">
+    <div class="col">
+        columna 1
+    </div>
+    <div class="col">
+        columna 2
+    </div>
+    <div class="col">
+        columna 3
+    </div>
+</div>
+
+<h4>Ejemplo 2: alineando las columnas horizontalmente</h4>
+<div class="row">
+    <div class="col align-self-start">
+        columna 1
+    </div>
+    <div class="col align-self-center">
+        columna 2
+    </div>
+    <div class="col align-self-end">
+        columna 3
+    </div>
+</div>
+<h4>Ejemplo 3: Offset</h4>
+<div class="row">
+    <div class="col-4">
+        columna 1
+    </div>
+    <div class="col-4 offset-4">
+        columna 2
+    </div>
+   
+</div>
+<h4>Ejemplo 4: AutoMargen</h4>
+<div class="row">
+    <div class="col-3">
+        columna 1
+    </div>
+    <div class="col-4 ms-auto">
+        columna 2
+    </div>
+
+</div>
+<h4>Ejemplo 5: Gutter horizontal</h4>
+<div class="row gx-sm-0  gx-md-3 gx-lg-5">
+    <div class="col">
+        <div class="bg-light border">
+            columna 1
+        </div>
+    </div>
+    <div class="col">
+        <div class="bg-light border">
+            columna 2
+        </div>
+    </div>
+
+</div>
+
+<h4>Ejemplo 5: Gutter vertical</h4>
+<div class="row gx-sm-0  gx-md-3 gx-lg-5 gy-4">
+    <div class="col-6">
+        <div class="bg-light border">
+            columna 1
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            columna 2
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            columna 3
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            columna 4
+        </div>
+    </div>
+
+</div>
+<h4>Ejemplo 6: Gutter vertical y horizontal</h4>
+<div class="row g-2">
+    <div class="col-6">
+        <div class="bg-light border">
+            columna 1
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            columna 2
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            columna 3
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            columna 4
+        </div>
+    </div>
+
+</div>
+
+
+<h4>Ejemplo 7: Controlando dimensiones de las imagenes en columnas</h4>
+
+<div class="row gy-5">
+    <div class="col-sm-3">
+        <img src="https://www.cervantesvirtual.com/images/portales/constituciones_hispanoamericanas/graf/mapas/06-mexico_mapa_de_los_estados_s.jpg" class="img-fluid" />
+    </div>
+    <div class="col-sm-3">
+        <img src="https://www.cervantesvirtual.com/images/portales/constituciones_hispanoamericanas/graf/mapas/06-mexico_mapa_de_los_estados_s.jpg" class="img-fluid" />
+    </div>
+    <div class="col-sm-3">
+        <img src="https://www.cervantesvirtual.com/images/portales/constituciones_hispanoamericanas/graf/mapas/06-mexico_mapa_de_los_estados_s.jpg" class="img-fluid" />
+    </div>
+    <div class="col-sm-3">
+        <img src="https://www.cervantesvirtual.com/images/portales/constituciones_hispanoamericanas/graf/mapas/06-mexico_mapa_de_los_estados_s.jpg" class="img-fluid" />
+    </div>
+</div>
+
+<h4>Ejemplo 8: Controlando dimensiones de las imagenes tipo thumbnail</h4>
+<img src="https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/bsf846hh2eo2dse1t05c5rmq2e.jpg" class="img-thumbnail rounded-circle" />
