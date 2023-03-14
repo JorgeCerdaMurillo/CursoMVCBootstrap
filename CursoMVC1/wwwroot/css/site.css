@@ -18,3 +18,7 @@ body {
     background-color: #121212; /* color de fondo oscuro */
     color:#00ffff/* #f2f2f2;  color de texto claro */
 }
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color:#121212;
+    border-radius:50%;
+}

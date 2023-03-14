@@ -250,3 +250,299 @@ Sin Ratio:
 <button class="btn btn-outline-primary me-5 p-5">BOTON</button>
 <button class="btn btn-outline-secondary">BOTON</button>
 
+
+<h4>Ejemplo 13: ALINEANDO TEXTO</h4>
+<p class="text-start">IZQUIERDA</p>
+<p class="text-center">CENTRO</p>
+<p class="text-end">DERECHA</p>
+
+<p class="text-sm-center">CENTRO</p>
+<p class="text-md-center">CENTRO</p>
+<p class="text-lg-center">CENTRO</p>
+<p class="text-xl-center">CENTRO</p>
+
+
+<h2>TEXTO DENTRO DE SU CONTENEDOR</h2>
+<div class="badge bg-primary text-wrap" style="width:6rem;">
+    este texto no se sale de su contenedor
+</div>
+<div class="badge bg-primary text-wrap text-break" style="width:6rem;">
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
+
+<h2>TRANSFORMANDO TEXTO</h2>
+<p class="text-lowercase">MInusculas.</p>
+<p class="text-uppercase">Mayusculas .</p>
+<p class="text-capitalize">cada palabra de la oracion inicia con mayusculas.</p>
+
+<h2>Estilos de textos</h2>
+<p class="fw-bold">Negrita.</p>
+<p class="fw-normal">Normal.</p>
+<p class="fw-light">Light.</p>
+<p class="fw-lighter">Mas Light.</p>
+<p class="fst-italic">Cursiva.</p>
+<p class="text-decoration-underline">SUBRAYADO.</p>
+<p class="text-decoration-line-through">LInea atravezando el texto.</p>
+
+<a href="#" class="">ENLACE CON DECORACION</a>
+<br />
+<a href="#" class="text-decoration-none">ENLACE SIN DECORACION</a>
+
+
+<h2>FORMULARIOS </h2>
+<form>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Descripcion</label>
+        <textarea type="email" class="form-control" rows="3"></textarea>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Color Favorito</label>
+
+       <select class="form-select">
+           <option value="1">Azul</option>
+           <option value="2">Rojo</option>
+           <option value="3">Verda</option>
+       </select>
+    </div>
+    <div class="form-check">
+        <input type="checkbox"" class="form-check-input" checked></input>
+        <label class="form-label"> Es Empleado</label>
+
+    </div>
+    <div class="form-check">
+        <input type="radio" " class="form-check-input" name="miradio"></input>
+        <label> OPCION 1</label>
+
+    </div>
+    <div class="form-check">
+        <input type="radio" " class="form-check-input" name="miradio"></input>
+        <label> OPCION 2</label>
+
+    </div>
+    <div class="form-floating mb-3">
+        <input type="email" " class="form-control" placeholder="email"></input>
+        <label> EMAIL</label>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" disabled></input>
+    </div>
+    <div class="mb-3">
+        <label>Color camisa</label>
+        <input type="color" class="form-control form-control-color" value="#ffffff"></input>
+    </div>
+    <div>
+        <button class="btn btn-primary">Enviar</button>
+        <button class="btn btn-secondary">Cancelar</button>
+
+    </div>
+</form>
+
+    <h1>FORMULARIO CON COLUMNAS</h1>
+    <div class="row">
+        <div class="col">
+        <input type="text" class="form-control" placeholder="Primer Nombre" />
+
+        </div>
+    <div class="col">
+        <input type="text" class="form-control" placeholder="Primer Apellido" />
+
+    </div>
+    <div class="col">
+<button class="btn btn-primary">Enviar</button>
+    </div>
+    </div>
+
+<div class="accordion" id="ejemploacordeon">
+    <div class="accordion-item">
+        <h2 class="acordion-header">
+            <button data-bs-toggle="collapse" data-bs-target="#elemento1acordeon"
+                    class="accordion-button">Elemento 1</button>
+        </h2>
+        <div id="elemento1acordeon" class="accordion-collapse collapse show" data-bs-parent="#ejemploacordeon">
+            <div class="accordion-body">
+                Este es el contenido del primer elemento
+            </div>
+        </div>
+    </div>  
+    <div class="accordion-item">
+        <h2 class="acordion-header">
+            <button data-bs-toggle="collapse" data-bs-target="#elemento1acordeon2"
+                    class="accordion-button">Elemento 2</button>
+        </h2>
+        <div id="elemento1acordeon2" class="accordion-collapse collapse " data-bs-parent="#ejemploacordeon">
+            <div class="accordion-body">
+                Este es el contenido del segundo elemento
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1>EJEMPLO 14: MOSTRAR ALERTAS</h1>
+<button onclick="mostrarAlertaExitoso()" >Mostra alerta exitoso</button>
+<button onclick="mostrarAlertaError()">Mostra alerta de error</button>
+
+<div>
+    Las alertas se van a mostrar aquí
+</div>
+
+<div id="contenedor-alertas">
+</div>
+
+
+<h1>CARRUSEL DE FOTOS</h1>
+
+<div id="carouselEjemplo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://embamex.sre.gob.mx/republicadominicana/images/stories/mapa%20rep%20dom%202.jpg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn0.bodas.net/article/3132/3_2/960/jpg/62313-shutterstock-1896362896.jpeg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+            <img src="https://blogs.iadb.org/ideas-que-cuentan/wp-content/uploads/sites/11/2019/03/Centroam%C3%A9rica-y-Rep%C3%BAblica-Dominicana-desaf%C3%ADos-externos-min.jpg" class="d-block w-100" />
+        </div>
+    </div>
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselEjemplo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselEjemplo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselEjemplo" data-bs-slide-to="2"></button>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEjemplo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselEjemplo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+<h1>VENTANAS MODALES</h1>
+<!--Botón abre modal-->
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ejemploModal">
+    Abrir modal
+</button>
+
+<!--Modal-->
+
+<div class="modal fade" id="ejemploModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Título del modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Este es un pequeño formulario</p>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary" data-bs-dismiss="modal">Salvar cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1>TABS</h1>
+
+<ul class="nav nav-tabs justify-content-center">
+    <li class="nav-item">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
+            Tab 1
+        </button>
+    </li>
+
+    <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
+            Tab 2
+        </button>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="tab1">
+        Buenos días
+    </div>
+
+    <div class="tab-pane fade" id="tab2">
+        Adiós
+    </div>
+</div>
+
+
+<h1>MENU LATERAL OFFCANVAS</h1>
+
+<button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#ejemplooffcanbas1">
+    ABRIR OFFCANVAS
+</button>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="ejemplooffcanbas1">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Mi app</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas">
+
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            Un texto ejemplo
+        </div>
+    </div>
+</div>
+<h1>TOASTS</h1>
+
+<button type="button" class="btn btn-primary" onclick="mostrarToast()">Mostrar toast</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="miToast" class="toast">
+        <div class="toast-header">
+            <strong class="me-auto">Mensaje enviado</strong>
+            <small>Hace unos instantes</small>
+            <button class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+            El mensaje fue enviado a Jorge.
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        //COSAS DE LAS ALERTAS
+        function mostrarAlertaExitoso() {
+            mostrarAlerta('Este es un mensaje exitoso', 'success');
+        }
+
+        function mostrarAlertaError() {
+            mostrarAlerta('Este es un mensaje de error', 'danger');
+        }
+
+        function mostrarAlerta(mensaje, tipo) {
+            const alerta = document.createElement("div");
+            alerta.innerHTML = `<div class="alert alert-${tipo}" role="alert" data-bs-dismiss="alert">
+                                                  ${mensaje}
+                                                </div>`;
+            const contenedorAlertas = document.getElementById('contenedor-alertas');
+            contenedorAlertas.append(alerta)
+        }
+        //COSAS DE LOS TOAST
+        function mostrarToast() {
+            var ejemploToast = document.getElementById('miToast');
+            var toast = new bootstrap.Toast(ejemploToast);
+            toast.show();
+        }
+    </script>
+}
